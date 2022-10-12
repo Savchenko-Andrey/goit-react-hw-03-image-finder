@@ -4,7 +4,7 @@ import { ImgGalleryList } from './ImageGallery.styled';
 
 export const ImageGallery = ({ data, onOpenModal }) => {
   return (
-    <div display="flex" flexDirection="column" alignItems="center">
+    <div>
       <ImgGalleryList>
         {data.map(item => {
           return (
