@@ -4,8 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { animateScroll as scroll } from 'react-scroll';
 import { Box } from '../App.styled';
-import { Api } from './Api/Api'
-import { Loader } from './Loader/Loader';
+import { Api } from './Api/Api';
+import { FormSerch } from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Modal } from './Modal/Modal';
 import { LoadMoreBtn } from './Button/Button';
@@ -89,7 +89,7 @@ export class App extends Component {
 
     return (
       <Box>
-        <Loader onSubmit={this.handleSubmit} />
+        <FormSerch onSubmit={this.handleSubmit} />
         <ImageGallery onOpenModal={this.handeClick} data={data} />
         {showBtn && <LoadMoreBtn onClick={this.handleClickLoadMoreBtn} />}
         {showModal && <Modal onClick={this.toggleModal}>{largePage}</Modal>}

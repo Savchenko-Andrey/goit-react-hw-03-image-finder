@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 import { toast } from 'react-toastify';
 import * as yup from 'yup';
-import { Serchbar, InputForm, HeaderForm } from './Form.styled';
+import { Serchbar, InputForm, HeaderForm } from './Searchbar.styled';
 import { SerchButton } from 'components/Button/Button';
 
 export const FormSerch = ({ onSubmit }) => {

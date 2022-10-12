@@ -6,8 +6,8 @@ export const HeaderForm = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 6px;
-  background-color: red;
+  height: 40px;
+  background-color: lightblue;
 `;
 
 export const Serchbar = styled(Form)`
@@ -15,14 +15,13 @@ export const Serchbar = styled(Form)`
 `;
 
 export const InputForm = styled(Field)`
-  width: 8px;
-  height: 10px;
+  width: 300px;
+  height: 30px;
   outline: none;
-  /* border: ${p => p.theme.borders.normal}; */
-  border-radius: 10px;
+  border-radius: 5px;
   :hover,
   :focus {
-    /* border: ${p => p.theme.borders.normal} green; */
-    box-shadow: 2px 2px 3px green;
+    border: blue;
+    box-shadow: 2px 2px 3px blue;
   }
 `;
