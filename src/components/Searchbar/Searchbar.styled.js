@@ -6,8 +6,10 @@ export const HeaderForm = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40px;
+  height: 45px;
+  margin-top: 5px;
   background-color: lightblue;
+  border-radius: 10px;
 `;
 
 export const Serchbar = styled(Form)`
@@ -20,6 +22,7 @@ export const InputForm = styled(Field)`
   padding: 10px;
   outline: none;
   border-radius: 5px;
+  border: solid 1px #f2f2f2;
   :hover,
   :focus {
     border: blue;

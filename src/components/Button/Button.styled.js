@@ -20,6 +20,7 @@ export const LoadBtn = styled.button`
   width: 200px;
   height: 30px;
   outline: none;
+  border: solid 1px #f2f2f2;
   border-radius: 10px;
   color: blue;
   background-color: lightblue;
