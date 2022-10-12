@@ -17,6 +17,7 @@ export const Serchbar = styled(Form)`
 export const InputForm = styled(Field)`
   width: 300px;
   height: 30px;
+  padding: 10px;
   outline: none;
   border-radius: 5px;
   :hover,
