@@ -21,8 +21,8 @@ export const Api = async (query, apiDataService, page) => {
     });
 };
 
-// Api.propTypes = {
-//   query: PropTypes.string.isRequired,
-//   apiDataService: PropTypes.func.isRequired,
-//   page: PropTypes.string.isRequired,
-// };
+Api.propTypes = {
+  query: PropTypes.string.isRequired,
+  apiDataService: PropTypes.func.isRequired,
+  page: PropTypes.string.isRequired,
+};

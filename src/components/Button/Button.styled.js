@@ -1,13 +1,15 @@
 import styled from 'styled-components';
-import { GiBrute } from 'react-icons/gi';
+import { AiOutlineSearch } from 'react-icons/ai';
 
-export const Icons = styled(GiBrute)`
+export const Icons = styled(AiOutlineSearch)`
   width: 20px;
   height: 20px;
   cursor: pointer;
   :hover,
   :focus {
-    fill: ${p => p.theme.colors.muted};
+    width: 22px;
+    height: 22px;
+    fill: blue;
   }
 `;
 
@@ -15,20 +17,17 @@ export const LoadBtn = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* font-family: ${p => p.theme.fonts.heading};
-  font-size: ${p => p.theme.fontSizes.m};
-  padding: ${p => p.theme.space[3]}px; */
+  width: 200px;
+  height: 30px;
   outline: none;
-  /* border: ${p => p.theme.borders.normal}; */
   border-radius: 10px;
-  color: white;
-  background-color: ${p => p.theme.colors.accent};
+  color: blue;
+  background-color: lightblue;
   transition: border 250ms, box-shadow 250ms, scale 250ms;
   :hover,
   :focus {
     cursor: pointer;
-    /* border: ${p => p.theme.borders.normal} ${p => p.theme.colors.accent}; */
-    box-shadow: 2px 2px 3px #00bfff;
+    box-shadow: 2px 2px 3px blue;
     scale: 1.1;
   }
 `;

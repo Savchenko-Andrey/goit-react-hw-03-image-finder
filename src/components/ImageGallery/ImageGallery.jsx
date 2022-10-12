@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
-import { ImgGalleryList } from './ImageGallery.styled';
+import {Box, ImgGalleryList } from './ImageGallery.styled';
 
 export const ImageGallery = ({ data, onOpenModal }) => {
   return (
-    <div>
+    <Box>
       <ImgGalleryList>
         {data.map(item => {
           return (
@@ -18,7 +18,7 @@ export const ImageGallery = ({ data, onOpenModal }) => {
           );
         })}
       </ImgGalleryList>
-    </div>
+    </Box>
   );
 };
 

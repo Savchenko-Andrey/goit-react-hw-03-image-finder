@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { animateScroll as scroll } from 'react-scroll';
 import { Box } from '../App.styled';
 import { Api } from './Api/Api'
-// import { Loader } from './Loader/Loader';
+import { Loader } from './Loader/Loader';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Modal } from './Modal/Modal';
 import { LoadMoreBtn } from './Button/Button';
@@ -88,8 +88,8 @@ export class App extends Component {
     const { data, largePage, showModal, showSpiner, showBtn } = this.state;
 
     return (
-      <Box display="flex" flexDirection="column" alignItems="center" pb={5}>
-        <Api onSubmit={this.handleSubmit} />
+      <Box>
+        <Loader onSubmit={this.handleSubmit} />
         <ImageGallery onOpenModal={this.handeClick} data={data} />
         {showBtn && <LoadMoreBtn onClick={this.handleClickLoadMoreBtn} />}
         {showModal && <Modal onClick={this.toggleModal}>{largePage}</Modal>}
