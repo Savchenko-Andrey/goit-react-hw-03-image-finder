@@ -70,31 +70,6 @@ export class App extends Component {
     });
   };
 
-  apiDataService = (hits, totalHits) => {
-    this.setState(prevState => ({ data: prevState.data.concat(hits) }));
-    this.setState({ showBtn: true });
-    if (this.state.page * 12 > +totalHits) {
-      this.setState({ showBtn: false });
-    }
-    if (totalHits === 0) {
-      return toast.error(
-        'Sorry, there are no images matching your search query. Please try again.',
-        {
-          theme: 'dark',
-        }
-      );
-    };
-
-    if (totalHits < 12 && hits.length === 0) {
-      return toast.warn(
-        'Were sorry, but youve reached the end of search results.',
-        {
-          theme: 'dark',
-        }
-      );
-    }
-  };
-
   toggleModal = () => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,
